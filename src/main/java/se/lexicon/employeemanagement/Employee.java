@@ -10,7 +10,7 @@ public class Employee {
     private LocalDate dateHired;
     private static final double baseSalary=25000.00;
 
-    public Employee(String name) {
+    public Employee(String name,double salary) {
         this.name=name;
         this.salary = baseSalary;
     }

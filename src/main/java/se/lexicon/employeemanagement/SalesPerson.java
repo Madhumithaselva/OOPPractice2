@@ -8,7 +8,7 @@ public class SalesPerson extends Employee{
     private int acquiredClients;
 
     public SalesPerson(String name,String[] clients,int acquiredClients){
-        super(name);
+        super(name,25000);
         this.clients=clients;
         this.acquiredClients=acquiredClients;
         calculateSalary();

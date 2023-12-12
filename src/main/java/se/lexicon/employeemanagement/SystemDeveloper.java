@@ -5,7 +5,7 @@ public class SystemDeveloper extends Employee{
     private String[] languages;
 
     public SystemDeveloper(String name,String[] certificates,String[] languages){
-        super(name);
+        super(name,25000);
         this.certificates=certificates;
         this.languages=languages;
         calculateSalary();

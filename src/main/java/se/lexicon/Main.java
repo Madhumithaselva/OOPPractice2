@@ -9,7 +9,7 @@ import java.lang.String;
 public class Main {
     public static void main(String[] args) {
         //Object created for Employee class
-        Employee emp1=new Employee("Madhu");
+        Employee emp1=new Employee("Madhu",25000);
 
         //Assign values to the certification array and language array
         String[] certificateArray = {"Java Certification", "Python Certification"};
