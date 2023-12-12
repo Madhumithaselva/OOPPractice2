@@ -6,8 +6,14 @@ import java.time.LocalDate;
 public class Employee {
     private int id;
     private String name;
-    private double salary;
+    public double salary;
     private LocalDate dateHired;
+    private static final double baseSalary=25000.00;
+
+    public Employee(String name) {
+        this.name=name;
+        this.salary = baseSalary;
+    }
 
     public int getId() {
         return id;
@@ -22,6 +28,7 @@ public class Employee {
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
@@ -30,7 +37,7 @@ public class Employee {
     }
 
     public void setSalary(double salary) {
-        this.salary = salary;
+        this.salary = baseSalary;
     }
 
     public LocalDate getDateHired() {
@@ -40,7 +47,11 @@ public class Employee {
     public void setDateHired(LocalDate dateHired) {
         this.dateHired = dateHired;
     }
-    /*public abstract void calculateSalary(){
+    public void calculateSalary(){
+        this.salary=baseSalary;
+    }
+    public String toString(){
 
-    }*/
+        return "Name of the Employee: "+name +"\nBase salary of the Employee:"+baseSalary+ "\nCurrent Salary:"+salary;
+    }
 }
