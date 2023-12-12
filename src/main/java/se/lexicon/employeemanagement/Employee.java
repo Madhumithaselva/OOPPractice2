@@ -1,4 +1,4 @@
-package se.lexicon.model;
+package se.lexicon.employeemanagement;
 import java.lang.Object;
 import java.lang.String;
 import java.time.LocalDate;
